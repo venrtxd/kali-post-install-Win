@@ -2,8 +2,8 @@
 ## Kali Post-Installation Script
 
 ## System Updates / Upgrades
-sudo apt update -y -qq && sudo apt upgrade -y -qq
-sudo apt dist-upgrade -y -qq
+sudo apt get update -y 
+sudo apt-get dist-upgrade -y
 sudo apt autoremove -y -qq
 echo "####  System updated  ####"
 
@@ -114,14 +114,14 @@ echo "#### Powershell Installed ####"
 
 ## OpenJDK and Maven
 sudo apt install -y -qq openjdk-11-jdk
-sudo apt install -y -qq maven
+sudo apt install -y maven
 cd /opt
 sudo git clone --quiet https://github.com/veracode-research/rogue-jndi
 cd /opt/rogue-jndi
 sudo mvn package
 
 ## JWCrypto
-sudo apt install -y -qq python3-jwcrypto
+sudo apt install -y python3-jwcrypto
 echo "#### JWCrypto Installed"
 
 ## Zsteg
@@ -129,32 +129,32 @@ sudo gem install --silent zsteg
 echo "#### Zsteg Installed ####"
 
 ## PNGcheck
-sudo apt install -y -qq pngcheck
+sudo apt install -y pngcheck
 echo "#### PNGcheck Installed ####"
 
 ## Steghide
-sudo apt install -y -qq steghide
+sudo apt install -y steghide
 echo "#### Steghide Installed ####"
 
 ## Outguess
-sudo apt install -y -qq outguess
+sudo apt install -y outguess
 echo "#### Outguess Installed ####"
 
 ## Stegcracker
-sudo apt install -y -qq stegcracker
+sudo apt install -y stegcracker
 echo "#### Stegcracker Installed ####"
 
 ## Stegsnow
-sudo apt install -y -qq stegsnow
+sudo apt install -y stegsnow
 echo "#### Stegsnow Installed ####"
 
 ## Stegseek
 sudo wget https://github.com/RickdeJager/stegseek/releases/download/v0.6/stegseek_0.6-1.deb -O /tmp/stegseek_0.6-1.deb
-sudo apt install -y -qq /tmp/stegseek_0.6-1.deb
+sudo apt install -y /tmp/stegseek_0.6-1.deb
 echo "#### Stegseek Installed ####"
 
 ## Gimp
-sudo apt install -y -qq gimp
+sudo apt install -y gimp
 echo "#### Gimp Installed ####"
 
 ## Stegsolve
@@ -166,15 +166,15 @@ sudo apt install -y -qq audacity
 echo "#### Audacity Installed ####"
 
 ## Sonic-Visualiser
-sudo apt install -y -qq sonic-visualiser
+sudo apt install -y -sonic-visualiser
 echo "#### Sonic-Visualiser Installed ####"
 
 ## FcrackZIP
-sudo apt install -y -qq fcrackzip
+sudo apt install -y fcrackzip
 echo "#### FcrackZIP Installed ####"
 
 ## PDFcrack
-sudo apt install -y -qq pdfcrack
+sudo apt install -y pdfcrack
 echo "#### PDFcrack Installed ####"
 
 ## Add ~/.local/bin to $PATH
